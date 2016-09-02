@@ -84,9 +84,9 @@ a
         margin-top: -27px
         margin-left: -27px
         border: 8px solid #168de2
-        -webkit-border-radius: 30px
-        -webkit-animation: puls 2s ease-out
-        -webkit-animation-iteration-count: infinite
+        border-radius: 30px
+        animation: puls 2s ease-out
+        animation-iteration-count: infinite
 
     &.ring-2
         height: 62px
@@ -94,9 +94,9 @@ a
         margin-top: -31px
         margin-left: -31px
         border: 8px solid rgba(21, 141, 225, 0.7)
-        -webkit-border-radius: 30px
-        -webkit-animation: puls 2s ease-out
-        -webkit-animation-iteration-count: infinite
+        border-radius: 30px
+        animation: puls 2s ease-out
+        animation-iteration-count: infinite
 
 .phone-circle
     color: #fff
@@ -708,29 +708,17 @@ a
     color: #fbfbfb
     opacity: 0.6
 
-@-webkit-keyframes pulsate
-    0%
-        +transform(scale(0.1, 0.1))
-        opacity: 0.0
-    50%
-        +transform(scale(1.2, 1.2))
-        opacity: 1.0
-    100%
-        +transform(scale(0.1, 0.1))
-        opacity: 0.0
-
-@keyframes pulsate
-    0%
-        +transform(scale(0.1, 0.1))
-        opacity: 0.0
-    50%
-        +transform(scale(1.2, 1.2))
-        opacity: 1.0
-    100%
-        +transform(scale(0.1, 0.1))
-        opacity: 0.0
-
 @-webkit-keyframes puls
+    0%
+        +transform(scale(0.01, 0.01))
+        opacity: 0.0
+    50%
+        opacity: 1.0
+    100%
+        +transform(scale(1.2, 1.2))
+        opacity: 0.0
+
+@-moz-keyframes puls
     0%
         +transform(scale(0.01, 0.01))
         opacity: 0.0

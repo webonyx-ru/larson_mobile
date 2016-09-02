@@ -33,7 +33,7 @@ gulp.task('compass', function () {
 })
 
 //compass-watch
-gulp.task('compass-watch', function () {
+gulp.task('watch', function () {
   gulp.watch('app/sass/**/*', ['compass']);
 })
 
@@ -63,8 +63,10 @@ gulp.task('bower', function () {
         .pipe(gulp.dest('app'));
 })
 
-
 // watch
-gulp.task('watch', function () {
-    gulp.watch('bower.json', ["bower"]);
-})
+// gulp.task('watch', function () {
+//     gulp.watch('bower.json', ["bower"]);
+// })
+
+
+gulp.task('default', ['compass', 'watch']);

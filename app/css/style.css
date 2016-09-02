@@ -706,9 +706,9 @@ a {
   margin-top: -27px;
   margin-left: -27px;
   border: 8px solid #168de2;
-  -webkit-border-radius: 30px;
-  -webkit-animation: puls 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
+  border-radius: 30px;
+  animation: puls 2s ease-out;
+  animation-iteration-count: infinite;
 }
 .gps_ring.ring-2 {
   height: 62px;
@@ -716,9 +716,9 @@ a {
   margin-top: -31px;
   margin-left: -31px;
   border: 8px solid rgba(21, 141, 225, 0.7);
-  -webkit-border-radius: 30px;
-  -webkit-animation: puls 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
+  border-radius: 30px;
+  animation: puls 2s ease-out;
+  animation-iteration-count: infinite;
 }
 
 .phone-circle {
@@ -856,11 +856,11 @@ a {
   display: inline-block;
   width: 28px;
   height: 36px;
-  background-image: url('../images/logo.png?1472744060');
+  background-image: url('../images/logo.png?1472796979');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-head .b-head--nav.head-nav .head-nav--item .b-head--logo {
-    background-image: url('../images/logo@2x.png?1472744060');
+    background-image: url('../images/logo@2x.png?1472796979');
     background-size: 28px 36px;
   }
 }
@@ -1134,21 +1134,21 @@ a {
 }
 
 .asb > a {
-  background-image: url('../images/app-store-btn.png?1472744060');
+  background-image: url('../images/app-store-btn.png?1472796979');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .asb > a {
-    background-image: url('../images/app-store-btn@2x.png?1472744060');
+    background-image: url('../images/app-store-btn@2x.png?1472796979');
     background-size: 172px 50px;
   }
 }
 
 .gpb > a {
-  background-image: url('../images/google-play-btn.png?1472744060');
+  background-image: url('../images/google-play-btn.png?1472796979');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .gpb > a {
-    background-image: url('../images/google-play-btn@2x.png?1472744060');
+    background-image: url('../images/google-play-btn@2x.png?1472796979');
     background-size: 172px 50px;
   }
 }
@@ -1177,13 +1177,13 @@ a {
 }
 
 .b-spread {
-  background-image: url('../images/spread-block-bg.png?1472744060');
+  background-image: url('../images/spread-block-bg.png?1472796979');
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-spread {
-    background-image: url('../images/spread-block-bg@2x.png?1472744060');
+    background-image: url('../images/spread-block-bg@2x.png?1472796979');
     background-size: 320px 293px;
   }
 }
@@ -1464,59 +1464,28 @@ a {
   opacity: 0.6;
 }
 
-@-webkit-keyframes pulsate {
-  0% {
-    transform: scale(0.1, 0.1);
-    -ms-transform: scale(0.1, 0.1);
-    -webkit-transform: scale(0.1, 0.1);
-    -moz-transform: scale(0.1, 0.1);
-    -o-transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.1, 0.1);
-    -ms-transform: scale(0.1, 0.1);
-    -webkit-transform: scale(0.1, 0.1);
-    -moz-transform: scale(0.1, 0.1);
-    -o-transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-}
-@keyframes pulsate {
-  0% {
-    transform: scale(0.1, 0.1);
-    -ms-transform: scale(0.1, 0.1);
-    -webkit-transform: scale(0.1, 0.1);
-    -moz-transform: scale(0.1, 0.1);
-    -o-transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.1, 0.1);
-    -ms-transform: scale(0.1, 0.1);
-    -webkit-transform: scale(0.1, 0.1);
-    -moz-transform: scale(0.1, 0.1);
-    -o-transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-}
 @-webkit-keyframes puls {
+  0% {
+    transform: scale(0.01, 0.01);
+    -ms-transform: scale(0.01, 0.01);
+    -webkit-transform: scale(0.01, 0.01);
+    -moz-transform: scale(0.01, 0.01);
+    -o-transform: scale(0.01, 0.01);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+@-moz-keyframes puls {
   0% {
     transform: scale(0.01, 0.01);
     -ms-transform: scale(0.01, 0.01);
