@@ -1,0 +1,10 @@
+{
+  "name": "gulp_project",
+  "version": "0.0.1",
+  "description": "Gulp testing project",
+  "author": "Yuriy Bogatyrenko",
+  "dependencies": {
+    "uikit": "^2.27.1",
+    "jquery": "^3.1.0"
+  }
+}
