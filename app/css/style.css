@@ -503,6 +503,26 @@
   }
 }
 
+.fri-location {
+  background-image: url('../images/icons-s9333a20e64.png');
+  background-position: 0 -172px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  width: 11px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .fri-location {
+    background-image: url('../images/icons-2x-se06b1c7267.png');
+    background-size: 65px auto;
+    background-position: 0 -172px;
+    height: 14px;
+    width: 11px;
+  }
+}
+
 .fri-visa {
   background-image: url('../images/icons-s9333a20e64.png');
   background-position: 0 -776px;
@@ -856,11 +876,11 @@ a {
   display: inline-block;
   width: 28px;
   height: 36px;
-  background-image: url('../images/logo.png?1472796979');
+  background-image: url('../images/logo.png?1472795312');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-head .b-head--nav.head-nav .head-nav--item .b-head--logo {
-    background-image: url('../images/logo@2x.png?1472796979');
+    background-image: url('../images/logo@2x.png?1472795312');
     background-size: 28px 36px;
   }
 }
@@ -1134,21 +1154,21 @@ a {
 }
 
 .asb > a {
-  background-image: url('../images/app-store-btn.png?1472796979');
+  background-image: url('../images/app-store-btn.png?1472795312');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .asb > a {
-    background-image: url('../images/app-store-btn@2x.png?1472796979');
+    background-image: url('../images/app-store-btn@2x.png?1472795312');
     background-size: 172px 50px;
   }
 }
 
 .gpb > a {
-  background-image: url('../images/google-play-btn.png?1472796979');
+  background-image: url('../images/google-play-btn.png?1472795312');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .gpb > a {
-    background-image: url('../images/google-play-btn@2x.png?1472796979');
+    background-image: url('../images/google-play-btn@2x.png?1472795312');
     background-size: 172px 50px;
   }
 }
@@ -1177,13 +1197,13 @@ a {
 }
 
 .b-spread {
-  background-image: url('../images/spread-block-bg.png?1472796979');
+  background-image: url('../images/spread-block-bg.png?1472795312');
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-spread {
-    background-image: url('../images/spread-block-bg@2x.png?1472796979');
+    background-image: url('../images/spread-block-bg@2x.png?1472795312');
     background-size: 320px 293px;
   }
 }
@@ -1464,66 +1484,16 @@ a {
   opacity: 0.6;
 }
 
-@-webkit-keyframes puls {
-  0% {
-    transform: scale(0.01, 0.01);
-    -ms-transform: scale(0.01, 0.01);
-    -webkit-transform: scale(0.01, 0.01);
-    -moz-transform: scale(0.01, 0.01);
-    -o-transform: scale(0.01, 0.01);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    opacity: 0;
-  }
-}
-@-moz-keyframes puls {
-  0% {
-    transform: scale(0.01, 0.01);
-    -ms-transform: scale(0.01, 0.01);
-    -webkit-transform: scale(0.01, 0.01);
-    -moz-transform: scale(0.01, 0.01);
-    -o-transform: scale(0.01, 0.01);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    opacity: 0;
-  }
-}
 @keyframes puls {
   0% {
-    transform: scale(0.01, 0.01);
-    -ms-transform: scale(0.01, 0.01);
     -webkit-transform: scale(0.01, 0.01);
-    -moz-transform: scale(0.01, 0.01);
-    -o-transform: scale(0.01, 0.01);
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
     -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
     opacity: 0;
   }
 }
