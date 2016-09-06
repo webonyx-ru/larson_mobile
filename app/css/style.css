@@ -288,6 +288,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   vertical-align: middle;
   height: 17px;
   width: 16px;
+  position: relative;
+  top: -1px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
   .fri-l-rus {
@@ -887,8 +889,10 @@ a:hover {
   padding: 16px 0;
 }
 .b-head .b-head--nav.head-nav .head-nav--item .lang-drop {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
+  margin-right: 10px;
 }
 .b-head .b-head--nav.head-nav .head-nav--item .lang-drop .drop-open-btn {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -1559,4 +1563,11 @@ a:hover {
     -webkit-transform: scale(1.2, 1.2);
     opacity: 0;
   }
+}
+.fz0 {
+  font-size: 0;
+}
+
+.lh0 {
+  line-height: 0;
 }

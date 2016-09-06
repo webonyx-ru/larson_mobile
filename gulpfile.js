@@ -17,7 +17,7 @@ gulp.task('sftp', function(){
             pass: "",
             remotePath: ""
         }))
-})
+});
 
 // compass
 gulp.task('compass', function () {
@@ -30,29 +30,40 @@ gulp.task('compass', function () {
         sass_cache: "app/.sass-cache"
       }))
       .pipe(gulp.dest('app/css'))
-})
+});
 
 //compass-watch
 gulp.task('watch', function () {
   gulp.watch('app/sass/**/*', ['compass']);
-})
+});
 
 // clean
 gulp.task('clean', function(){
     gulp.src('dist', {read: false})
         .pipe(clean());
-})
+});
 
 // Build
 gulp.task('build',["clean"], function(){
 
-    return gulp.src("app/*.html")
+    gulp.src("app/*.html")
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
+        // .pipe("app/fonts/**/*")
         .pipe(useref())
         .pipe(gulp.dest('dist'));
-})
+
+    gulp.src("app/fonts/**/*")
+        .pipe(gulp.dest('dist/fonts'));
+
+    gulp.src("app/images/**/*")
+        .pipe(gulp.dest('dist/images'));
+
+    gulp.src("app/img/**/*")
+        .pipe(gulp.dest('dist/img'));
+
+});
 
 // Bower
 gulp.task('bower', function () {
@@ -61,12 +72,12 @@ gulp.task('bower', function () {
             directory: "app/bower_components"
         }))
         .pipe(gulp.dest('app'));
-})
+});
 
 // watch
 // gulp.task('watch', function () {
 //     gulp.watch('bower.json', ["bower"]);
-// })
+// });
 
 
 gulp.task('default', ['compass', 'watch']);
