@@ -943,11 +943,11 @@ a:hover {
   display: inline-block;
   width: 28px;
   height: 36px;
-  background-image: url('../images/logo.png?1472802949');
+  background-image: url('../images/logo.png?1473240181');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-head .b-head--nav.head-nav .head-nav--item .b-head--logo {
-    background-image: url('../images/logo@2x.png?1472802949');
+    background-image: url('../images/logo@2x.png?1473240181');
     background-size: 28px 36px;
   }
 }
@@ -988,7 +988,6 @@ a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .b-head .b-head--nav.head-nav .head-nav--item .item-anchor.active .item-line:first-child {
@@ -1022,7 +1021,6 @@ a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin-left: -85%;
 }
@@ -1104,7 +1102,6 @@ a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--dropdown > ul {
@@ -1112,7 +1109,6 @@ a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   background: #d5d5d5;
@@ -1221,21 +1217,21 @@ a:hover {
 }
 
 .asb > a {
-  background-image: url('../images/app-store-btn.png?1472802949');
+  background-image: url('../images/app-store-btn.png?1473240181');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .asb > a {
-    background-image: url('../images/app-store-btn@2x.png?1472802949');
+    background-image: url('../images/app-store-btn@2x.png?1473240181');
     background-size: 172px 50px;
   }
 }
 
 .gpb > a {
-  background-image: url('../images/google-play-btn.png?1472802949');
+  background-image: url('../images/google-play-btn.png?1473240181');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .gpb > a {
-    background-image: url('../images/google-play-btn@2x.png?1472802949');
+    background-image: url('../images/google-play-btn@2x.png?1473240181');
     background-size: 172px 50px;
   }
 }
@@ -1264,15 +1260,9 @@ a:hover {
 }
 
 .b-spread {
-  background-image: url('../images/spread-block-bg.png?1472802949');
+  background-image: url("../images/spread-block-bg@2x.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-spread {
-    background-image: url('../images/spread-block-bg@2x.png?1472802949');
-    background-size: 320px 293px;
-  }
 }
 
 .b-spread--info {
