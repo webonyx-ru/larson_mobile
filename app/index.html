@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title goes here...</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <!--build:css css/vendor.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.css">
@@ -65,7 +66,7 @@
                                 </span>
                             </li>
                             <li class="nav-list--item list-item--dropdown">
-                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-info"></i></span>О компании</a>
+                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-info"></i></span><span class="menu-item-lined">О компании</span></a>
                                 <ul>
                                     <li><a href="#">Информация</a></li>
                                     <li><a href="#">Награды</a></li>
@@ -76,7 +77,7 @@
                                 </ul>
                             </li>
                             <li class="nav-list--item list-item--dropdown">
-                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-bag"></i></span>Cервисы</a>
+                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-bag"></i></span><span class="menu-item-lined">Cервисы</span></a>
                                 <ul>
                                     <li><a href="#">Информация</a></li>
                                     <li><a href="#">Награды</a></li>
@@ -87,7 +88,7 @@
                                 </ul>
                             </li>
                             <li class="nav-list--item list-item--dropdown">
-                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-currencies"></i></span>Метатрейдер</a>
+                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-currencies"></i></span><span class="menu-item-lined">Метатрейдер</span></a>
                                 <ul>
                                     <li><a href="#">Информация</a></li>
                                     <li><a href="#">Награды</a></li>
@@ -98,7 +99,7 @@
                                 </ul>
                             </li>
                             <li class="nav-list--item list-item--dropdown">
-                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-partners"></i></span>Партнерство</a>
+                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-partners"></i></span><span class="menu-item-lined">Партнерство</span></a>
                                 <ul>
                                     <li><a href="#">Информация</a></li>
                                     <li><a href="#">Награды</a></li>
@@ -109,7 +110,7 @@
                                 </ul>
                             </li>
                             <li class="nav-list--item list-item--dropdown">
-                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-megaphone"></i></span>Новости</a>
+                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-megaphone"></i></span><span class="menu-item-lined">Новости</span></a>
                                 <ul>
                                     <li><a href="#">Информация</a></li>
                                     <li><a href="#">Награды</a></li>
@@ -120,7 +121,7 @@
                                 </ul>
                             </li>
                             <li class="nav-list--item list-item--dropdown">
-                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-question"></i></span>FAQ</a>
+                                <a href="#" class="dropdown-btn"><span class="icon"><i class="fri fri-question"></i></span><span class="menu-item-lined">FAQ</span></a>
                                 <ul>
                                     <li><a href="#">Информация</a></li>
                                     <li><a href="#">Награды</a></li>
@@ -131,8 +132,8 @@
                                 </ul>
                             </li>
                             <li class="nav-list--item list-item--foot">
-                                <p><a href="#" class=""><span class="icon"><i class="fri fri-phone"></i></span>8-800-550-00-15</a></p>
-                                <p><a href="#"><span class="icon"><i class="fri fri-desktop"></i></span>Посмотреть полную версию</a></p>
+                                <p><a href="#" class=""><span class="icon"><i class="fri fri-phone"></i></span><span class="menu-item-lined">8-800-550-00-15</span></a></p>
+                                <p><a href="#"><span class="icon"><i class="fri fri-desktop"></i></span><span class="menu-item-lined">Посмотреть полную версию</span></a></p>
                             </li>
                         </ul>
                     </nav>
@@ -153,22 +154,18 @@
         </section><!-- .b-welcome end -->
 
         <section class="sb b-news">
-            <div class="borderred-slider">
-                <div class="wrapper">
+            <div class="switcher-navs">
+                <div class="wrapper not-wrapped">
                     <span class="slider-btn to-left">Решения</span>
-                    <div data-uk-slider="{infinite: false}">
-                        <div class="uk-slider-container">
-                            <ul class="uk-slider b-news--list uk-grid-small" data-uk-switcher="{connect:'#my-id', animation: 'slide-right'}">
-                                <li class="uk-active"><a href="#">Бездепозитные счета</a></li>
-                                <li><a href="#">Бинарные опционы</a></li>
-                                <li><a href="#">Классический Форекс</a></li>
-                                <li><a href="#">NDD/ECN счета</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ul class="b-news--list uk-grid-small" data-uk-switcher="{connect:'#switcher-main'}">
+                        <li class="uk-active"><a href="#">Бездепозитные счета</a></li>
+                        <li><a href="#">Бинарные опционы</a></li>
+                        <li><a href="#">Классический Форекс</a></li>
+                        <li><a href="#">NDD/ECN счета</a></li>
+                    </ul>
                 </div>
             </div>
-            <ul id="my-id" class="uk-switcher">
+            <ul id="switcher-main" class="uk-switcher">
                     <li>
                         <h3 class="switcher-title">
                             <div class="wrapper">
@@ -177,7 +174,7 @@
                         </h3>
                         <div class="wrapper">
                             <p class="switcher-info">Уникальный сервис, позволяющий получить стартовый капитал для начинающих трейдеров</p>
-                            <p class="switcher-info"><span class="icon"><i class="fri fri-check"></i></span> Торговля без вложений и риска</p>
+                            <p class="switcher-info smaller-text"><span class="icon"><i class="fri fri-check"></i></span> Торговля без вложений и риска</p>
                             <a href="#" class="sb--btn blue">Получить 100 $ на счет</a>
                             <a href="#" class="sb--btn orange">Узнать больше о счете</a>
                         </div>
@@ -190,7 +187,7 @@
                         </h3>
                         <div class="wrapper">
                             <p class="switcher-info">Наши новейшие технологии – для Вашего моментального результата</p>
-                            <p class="switcher-info"><span class="icon"><i class="fri fri-check"></i></span> Возможность сделать максимально успешный старт</p>
+                            <p class="switcher-info smaller-text"><span class="icon"><i class="fri fri-check"></i></span> Возможность сделать максимально успешный старт</p>
                             <a href="#" class="sb--btn blue">Открыть счет</a>
                             <a href="#" class="sb--btn orange">Узнать больше о бинарных опционах</a>
                         </div>
@@ -203,7 +200,7 @@
                     </h3>
                     <div class="wrapper">
                         <p class="switcher-info">Качественный сервис на рынке Форекс и CFD контрактов проверенный временем</p>
-                        <p class="switcher-info"><span class="icon"><i class="fri fri-check"></i></span> Этот сервис выбирают миллионы трейдеров со всего мира</p>
+                        <p class="switcher-info smaller-text"><span class="icon"><i class="fri fri-check"></i></span> Этот сервис выбирают миллионы трейдеров со всего мира</p>
                         <a href="#" class="sb--btn blue">Открыть счет</a>
                         <a href="#" class="sb--btn orange">Узнать больше про Форекс</a>
                     </div>
@@ -216,7 +213,7 @@
                     </h3>
                     <div class="wrapper">
                         <p class="switcher-info">Прямой доступ к межбанковской ликвидности по технологии STP и Direct Memory Access (DMA)</p>
-                        <p class="switcher-info"><span class="icon"><i class="fri fri-check"></i></span> Оптимальное решение для алгоритмического трейдинга</p>
+                        <p class="switcher-info smaller-text"><span class="icon"><i class="fri fri-check"></i></span> Оптимальное решение для алгоритмического трейдинга</p>
                         <a href="#" class="sb--btn blue">Открыть NDD/ECN счет</a>
                         <a href="#" class="sb--btn orange">Узнать больше про STP / DMA</a>
                     </div>
@@ -228,7 +225,7 @@
         <section class="sb b-countdown">
             <div class="wrapper">
                 <p class="b-countdown--number fw600">До выхода новости осталось</p>
-                <a href="#" class="link-tdu"><small class="b-countdown--info fw600">Жилищные кредиты</small></a>
+                <a href="#" class="link-tdu"><small class="b-countdown--info">Жилищные кредиты</small></a>
                 <div class="b-countdown-clock">
                     <span class="hours"></span> :
                     <span class="minutes"></span> :
@@ -243,15 +240,15 @@
                 <h3 class="sb--title light-f">Live spread</h3>
                 <p class="b-spread--info t-huge">0,005 <sup class="f-pow">1</sup></p>
                 <p class="b-spread--info">0,8 пункта — средний показатель по индустрии</p>
-                <a href="#" class="sb--btn trb">Смотреть все спреды</a>
+                <a href="#" class="sb--btn sb-btn-smaller trb">Смотреть все спреды</a>
             </div>
         </section><!-- b-spread end -->
 
         <!-- .b-callback -->
         <section class="sb b-callback">
             <div class="wrapper">
-                <p class="b-callback--number fw600">8-800-550-00-15</p>
-                <small class="b-callback--info underline">Для звонков по России</small>
+                <p class="b-callback--number">8-800-550-00-15</p>
+                <small class="b-callback--info">Для звонков по России</small>
                 <div class="phone-pulse">
                     <div class="phone-circle-cont">
                         <a href="#">
@@ -270,7 +267,7 @@
                 <p class="b-join-us--title">
                     <span class="fw600">250'000</span> Активных трейдеров в нашей соцсети
                 </p>
-                <a href="#" class="sb--btn blue">Присоединиться</a>
+                <a href="#" class="sb--btn sb-btn-smaller blue">Присоединиться</a>
             </div>
         </section><!-- .b-join-us end -->
 
@@ -278,7 +275,7 @@
         <section class="sb b-meta-trader">
             <div class="wrapper">
                 <h3 class="sb--title dark-f fw600">MetaTrader</h3>
-                <p class="b-meta-trader--info info dark-f">Предлагаем Вашему вниманию торговый терминал для популярных гаджетов</p>
+                <p class="b-meta-trader--info info dark-f">Предлагаем Вашему вниманию <br> торговый терминал для <br> популярных гаджетов</p>
                 <div class="b-meta-trader--btn asb"><a href="#"></a></div>
                 <div class="b-meta-trader--btn gpb"><a href="#"></a></div>
             </div>

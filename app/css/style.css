@@ -713,6 +713,9 @@ a:hover {
   padding: 0 17px;
   max-width: 768px;
 }
+.wrapper.not-wrapped {
+  padding: 0;
+}
 
 .underline {
   text-decoration: underline;
@@ -839,10 +842,13 @@ a:hover {
   text-align: center;
   font-size: 16px;
   line-height: 1.38;
-  padding: 10px 0;
   margin-top: 25px;
   border-radius: 5px;
   font-weight: 600;
+  line-height: 50px;
+}
+.sb--btn.sb-btn-smaller {
+  line-height: 45px;
 }
 .sb--btn:hover {
   color: #fff;
@@ -866,7 +872,6 @@ a:hover {
 }
 
 .b-head {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background: #fff;
   z-index: 3;
   position: fixed;
@@ -874,6 +879,9 @@ a:hover {
   width: 100%;
   left: 0;
   min-width: 320px;
+}
+.b-head.scrolled {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 .b-head .b-head--nav.head-nav {
   list-style: none;
@@ -895,7 +903,6 @@ a:hover {
   margin-right: 10px;
 }
 .b-head .b-head--nav.head-nav .head-nav--item .lang-drop .drop-open-btn {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px #ededed;
   background: #fff;
   padding: 7px;
@@ -906,9 +913,8 @@ a:hover {
   color: #808080;
 }
 .b-head .b-head--nav.head-nav .head-nav--item .lang-drop .uk-dropdown {
-  top: 29px !important;
+  top: 27px !important;
   width: 240px !important;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px #ededed;
   background: #fff;
   padding: 0;
@@ -981,10 +987,10 @@ a:hover {
 }
 .b-head .b-head--nav.head-nav .head-nav--item .item-anchor .item-line {
   width: 100%;
-  height: 2px;
+  height: 3px;
   display: block;
   background: #1683fb;
-  margin: 7px 0;
+  margin: 6px 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1012,17 +1018,19 @@ a:hover {
 
 .b-left-menu {
   width: 85%;
-  position: absolute;
+  position: fixed;
   top: 66px;
   left: 0;
   z-index: 2;
-  background: #fff;
+  bottom: 0;
+  background: #f2f2f2;
   border-top: 4px solid #fe7d1b;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin-left: -85%;
+  overflow-y: auto;
 }
 .b-left-menu.active {
   margin-left: 0;
@@ -1052,6 +1060,9 @@ a:hover {
   padding: 0 15px 0 0;
   border-bottom: 1px solid #e8e8e8;
   position: relative;
+}
+.b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item > a .menu-item-lined {
+  vertical-align: middle;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head {
   background: #0771bd;
@@ -1098,7 +1109,7 @@ a:hover {
   height: 10px;
   border-right: 1px solid #aaa;
   border-top: 1px solid #aaa;
-  transform: rotate(45deg);
+  transform: rotate(135deg);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1127,8 +1138,8 @@ a:hover {
   height: auto;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--dropdown.active > a::after {
-  transform: rotate(135deg);
-  top: 18px;
+  transform: rotate(-45deg);
+  top: 25px;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--dropdown.active ul {
   max-height: 500px;
@@ -1163,13 +1174,11 @@ a:hover {
   background-color: #0771bd;
   font-weight: 600;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   line-height: 41px;
 }
 
-.borderred-slider {
-  border-bottom: 1px solid #aaa;
-  border-top: 1px solid #aaa;
+.switcher-navs {
   height: 45px;
   overflow: hidden;
 }
@@ -1179,8 +1188,17 @@ a:hover {
   overflow: hidden;
 }
 
+.b-news--list {
+  font-size: 0;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.b-news--list::-webkit-scrollbar {
+  display: none;
+}
 .b-news--list > li {
   background: #fff;
+  display: inline-block;
 }
 .b-news--list > li > a {
   line-height: 41px;
@@ -1211,6 +1229,10 @@ a:hover {
   font-size: 16px;
   color: #4d4d4d;
   margin: 20px auto;
+  line-height: 1.44;
+}
+.switcher-info.smaller-text {
+  font-size: 15px;
 }
 .switcher-info .icon {
   color: #168de2;
@@ -1248,13 +1270,27 @@ a:hover {
 }
 .b-countdown .b-countdown--info {
   font-size: 14px;
-  color: #808080;
-  display: block;
+  color: #4d4d4d;
+  line-height: 1.71;
+  display: inline-block;
+  padding: 0;
   margin-top: 10px;
+  position: relative;
+}
+.b-countdown .b-countdown--info::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+  opacity: 0.5;
+  background-color: #808080;
+  display: block;
 }
 .b-countdown .b-countdown-clock {
   font-size: 34px;
-  color: #4d4d4d;
+  color: #1a1a1a;
   font-weight: 600;
   margin-top: 25px;
 }
@@ -1269,6 +1305,7 @@ a:hover {
   text-align: center;
   font-size: 14px;
   color: #f7f7f7;
+  font-weight: 300;
 }
 .b-spread--info.t-huge {
   display: inline-block;
@@ -1292,6 +1329,8 @@ a:hover {
 .b-callback .b-callback--number {
   font-size: 30px;
   color: #4d4d4d;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
 }
 .b-callback .b-callback--info {
   font-size: 14px;
@@ -1322,10 +1361,11 @@ a:hover {
 
 .b-meta-trader .b-meta-trader--info {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.44;
+  color: #4d4d4d;
 }
 .b-meta-trader .b-meta-trader--info.info {
-  margin-top: 25px;
+  margin-top: 15px;
   text-align: center;
 }
 .b-meta-trader .b-meta-trader--btn {

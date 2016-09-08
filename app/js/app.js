@@ -1,3 +1,17 @@
+$(document).ready(function () {
+    var header = $('.b-head'),
+        headerHeight = header.outerHeight();
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+
+        if(scrollTop > headerHeight) {
+            header.addClass('scrolled');
+        } else {
+            header.removeClass('scrolled');
+        }
+    });
+});
+
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -51,10 +65,16 @@ initializeClock('b-countdown-clock', deadline);
       this.classList.remove('active');
       leftNavMenu.classList.remove('active');
       blockHoverBg.classList.remove('active');
+      $('body').css({
+        'overflow': 'auto'
+      });
     } else {
       this.classList.add('active');
       leftNavMenu.classList.add('active');
       blockHoverBg.classList.add('active');
+      $('body').css({
+        'overflow': 'hidden'
+      });
     }
   });
 
