@@ -949,11 +949,11 @@ a:hover {
   display: inline-block;
   width: 28px;
   height: 36px;
-  background-image: url('../images/logo.png?1473240181');
+  background-image: url('../images/logo.png?1473416195');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-head .b-head--nav.head-nav .head-nav--item .b-head--logo {
-    background-image: url('../images/logo@2x.png?1473240181');
+    background-image: url('../images/logo@2x.png?1473416195');
     background-size: 28px 36px;
   }
 }
@@ -1083,6 +1083,9 @@ a:hover {
   line-height: 1.2;
   margin-top: 15px;
   margin-right: 10px;
+}
+.b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head a:last-child {
+  margin-left: 10px;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--foot {
   height: auto;
@@ -1239,21 +1242,21 @@ a:hover {
 }
 
 .asb > a {
-  background-image: url('../images/app-store-btn.png?1473240181');
+  background-image: url('../images/app-store-btn.png?1473416195');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .asb > a {
-    background-image: url('../images/app-store-btn@2x.png?1473240181');
+    background-image: url('../images/app-store-btn@2x.png?1473416195');
     background-size: 172px 50px;
   }
 }
 
 .gpb > a {
-  background-image: url('../images/google-play-btn.png?1473240181');
+  background-image: url('../images/google-play-btn.png?1473416195');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .gpb > a {
-    background-image: url('../images/google-play-btn@2x.png?1473240181');
+    background-image: url('../images/google-play-btn@2x.png?1473416195');
     background-size: 172px 50px;
   }
 }
@@ -1280,10 +1283,10 @@ a:hover {
 .b-countdown .b-countdown--info::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 3px;
   left: 0;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   opacity: 0.5;
   background-color: #808080;
   display: block;
