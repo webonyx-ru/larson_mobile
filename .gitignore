@@ -3,5 +3,5 @@ node_modules
 *.log
 app/bower_components
 app/sass-cache
-dist
+#dist
 .sass-cache
