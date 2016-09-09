@@ -977,11 +977,11 @@ a:hover {
   display: inline-block;
   width: 28px;
   height: 36px;
-  background-image: url('../images/logo.png?1472744060');
+  background-image: url('../images/logo.png?1472802949');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-head .b-head--nav.head-nav .head-nav--item .b-head--logo {
-    background-image: url('../images/logo@2x.png?1472744060');
+    background-image: url('../images/logo@2x.png?1472802949');
     background-size: 28px 36px;
   }
 }
@@ -1073,10 +1073,11 @@ a:hover {
   overflow: hidden;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item .icon {
-  width: 48px;
   text-align: center;
   display: inline-block;
   color: #168de2;
+  margin-right: 10px;
+  margin-left: 20px;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item > a {
   display: block;
@@ -1095,25 +1096,45 @@ a:hover {
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head {
   background: #0771bd;
   color: #fff;
-  line-height: 1.2;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 0;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head .icon {
   color: #fff;
-  margin: 0;
+  margin: 0 10px 0 0;
   text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: auto;
+}
+.b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head .icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head a {
   display: inline-block;
+  vertical-align: middle;
   padding: 0;
   border-bottom: none;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
-  margin-top: 15px;
-  margin-right: 10px;
+  font-weight: 600;
 }
-.b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head a:last-child {
-  margin-left: 10px;
+.b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head .menu__login-link {
+  position: relative;
+  margin-right: 20px;
+}
+.b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--head .menu__login-link:after {
+  display: block;
+  content: "";
+  height: 90%;
+  position: absolute;
+  top: 3px;
+  right: -11px;
+  width: 1px;
+  background: #fff;
 }
 .b-left-menu--nav.menu-nav .menu-nav--list.nav-list .nav-list--item.list-item--foot {
   height: auto;
@@ -1292,21 +1313,21 @@ a:hover {
 }
 
 .asb > a {
-  background-image: url('../images/app-store-btn.png?1472744060');
+  background-image: url('../images/app-store-btn.png?1472802949');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .asb > a {
-    background-image: url('../images/app-store-btn@2x.png?1472744060');
+    background-image: url('../images/app-store-btn@2x.png?1472802949');
     background-size: 172px 50px;
   }
 }
 
 .gpb > a {
-  background-image: url('../images/google-play-btn.png?1472744060');
+  background-image: url('../images/google-play-btn.png?1472802949');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .gpb > a {
-    background-image: url('../images/google-play-btn@2x.png?1472744060');
+    background-image: url('../images/google-play-btn@2x.png?1472802949');
     background-size: 172px 50px;
   }
 }
@@ -1366,6 +1387,7 @@ a:hover {
   color: #fff;
   position: relative;
   margin: 25px 0;
+  font-weight: 600;
 }
 
 .f-pow {
