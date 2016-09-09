@@ -977,11 +977,11 @@ a:hover {
   display: inline-block;
   width: 28px;
   height: 36px;
-  background-image: url('../images/logo.png?1472802949');
+  background-image: url('../images/logo.png?1472744060');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-head .b-head--nav.head-nav .head-nav--item .b-head--logo {
-    background-image: url('../images/logo@2x.png?1472802949');
+    background-image: url('../images/logo@2x.png?1472744060');
     background-size: 28px 36px;
   }
 }
@@ -1207,11 +1207,16 @@ a:hover {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
   line-height: 45px;
+  display: inline-block;
 }
 
 .switcher-navs {
   height: 45px;
   overflow: hidden;
+  white-space: nowrap;
+}
+.switcher-navs .wrapper {
+  position: relative;
 }
 
 .uk-slider-container {
@@ -1223,6 +1228,11 @@ a:hover {
   font-size: 0;
   overflow-x: scroll;
   white-space: nowrap;
+  position: absolute;
+  left: 90px;
+  right: 0;
+  top: 0;
+  margin: 0;
 }
 .b-news--list::-webkit-scrollbar {
   display: none;
@@ -1231,19 +1241,31 @@ a:hover {
   background: #fff;
   display: inline-block;
 }
+.b-news--list > li:last-child {
+  margin-right: 10px;
+}
 .b-news--list > li > a {
-  line-height: 41px;
+  line-height: 45px;
   display: block;
   text-align: center;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
   color: #168de2;
-  border-bottom: 2px solid #fff;
 }
 .b-news--list > li.uk-active > a {
+  position: relative;
   color: #1a1a1a;
-  border-bottom: 2px solid #168de2;
+}
+.b-news--list > li.uk-active > a:after {
+  display: block;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #168de2;
+  position: absolute;
 }
 
 .switcher-title {
@@ -1270,21 +1292,21 @@ a:hover {
 }
 
 .asb > a {
-  background-image: url('../images/app-store-btn.png?1472802949');
+  background-image: url('../images/app-store-btn.png?1472744060');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .asb > a {
-    background-image: url('../images/app-store-btn@2x.png?1472802949');
+    background-image: url('../images/app-store-btn@2x.png?1472744060');
     background-size: 172px 50px;
   }
 }
 
 .gpb > a {
-  background-image: url('../images/google-play-btn.png?1472802949');
+  background-image: url('../images/google-play-btn.png?1472744060');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .gpb > a {
-    background-image: url('../images/google-play-btn@2x.png?1472802949');
+    background-image: url('../images/google-play-btn@2x.png?1472744060');
     background-size: 172px 50px;
   }
 }
